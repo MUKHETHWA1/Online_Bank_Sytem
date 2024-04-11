@@ -1,0 +1,27 @@
+﻿<Window x:Class="m_bank.Deposit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:m_bank"
+        mc:Ignorable="d"
+        Title="Deposit" Height="450" Width="450">
+    <Grid>
+        <StackPanel Margin="0,0,0,388">
+            <Label Content="Deposit Amount Here" HorizontalContentAlignment="Center" FontStyle="Italic" FontWeight="Bold" FontSize="16" Height="40" Width="342"/>
+        </StackPanel>
+        <StackPanel Margin="0,70,225,315">
+            <Label Content="Enter Amount To Deposit" HorizontalContentAlignment="Center" FontSize="14"/>
+        </StackPanel>
+        <StackPanel Margin="230,70,10,315">
+            <TextBox x:Name="txtAmount" TextWrapping="Wrap" Width="204" Height="30" FontSize="14"/>
+        </StackPanel>
+        <StackPanel Margin="112,168,128,217">
+            <Button x:Name="btnDepositAmt" Content="Deposit" FontSize="18" FontWeight="Bold" Width="165" Click="btnDepositAmt_Click"/>
+        </StackPanel>
+        <StackPanel Margin="119,243,135,139">
+            <Button x:Name="btnExitDep" Content="Exit" FontWeight="Bold" FontSize="18" Width="154" Click="btnExitDep_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

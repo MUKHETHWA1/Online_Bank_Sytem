@@ -1,0 +1,27 @@
+﻿<Window x:Class="m_bank.AccountMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:m_bank"
+        mc:Ignorable="d"
+        Title="Account Menu" Height="450" Width="450">
+    <Grid>
+        <StackPanel Margin="0,0,0,385">
+            <Label Content="Welcome, Please Select Option" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="16" FontStyle="Italic"/>
+        </StackPanel>
+        <StackPanel Margin="102,90,102,301">
+            <Button x:Name="btnBalance" Content="1. Check Balance" HorizontalAlignment="Center" FontSize="16" Click="btnBalance_Click"/>
+        </StackPanel>
+        <StackPanel Margin="102,138,102,253">
+            <Button x:Name="btnDeposit" Content="2. Deposit" HorizontalAlignment="Center" FontSize="16" Click="btnDeposit_Click"/>
+        </StackPanel>
+        <StackPanel Margin="102,198,102,193">
+            <Button x:Name="btnWithdraw" Content="3. Withdraw" HorizontalAlignment="Center" FontSize="16"/>
+        </StackPanel>
+        <StackPanel Margin="102,260,102,131">
+            <Button x:Name="btnExit" Content="4. Exit" HorizontalAlignment="Center" FontSize="16" Click="btnExit_Click" Width="73"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
