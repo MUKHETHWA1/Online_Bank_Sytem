@@ -11,16 +11,16 @@
             <Label Content="Welcome, Please Select Option" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="16" FontStyle="Italic"/>
         </StackPanel>
         <StackPanel Margin="102,90,102,301">
-            <Button x:Name="btnBalance" Content="1. Check Balance" HorizontalAlignment="Center" FontSize="16" Click="btnBalance_Click"/>
+            <Button x:Name="btnBalance" Content="1. Check Balance" HorizontalAlignment="Center" FontSize="16" Click="btnBalance_Click" Background="#FFABAFD0"/>
         </StackPanel>
         <StackPanel Margin="102,138,102,253">
-            <Button x:Name="btnDeposit" Content="2. Deposit" HorizontalAlignment="Center" FontSize="16" Click="btnDeposit_Click"/>
+            <Button x:Name="btnDeposit" Content="2. Deposit" HorizontalAlignment="Center" FontSize="16" Click="btnDeposit_Click" Background="#FFEC9D9D"/>
         </StackPanel>
         <StackPanel Margin="102,198,102,193">
-            <Button x:Name="btnWithdraw" Content="3. Withdraw" HorizontalAlignment="Center" FontSize="16"/>
+            <Button x:Name="btnWithdraw" Content="3. Withdraw" HorizontalAlignment="Center" FontSize="16" Background="#FF9CCCCB"/>
         </StackPanel>
         <StackPanel Margin="102,260,102,131">
-            <Button x:Name="btnExit" Content="4. Exit" HorizontalAlignment="Center" FontSize="16" Click="btnExit_Click" Width="73"/>
+            <Button x:Name="btnExit" Content="4. Exit" HorizontalAlignment="Center" FontSize="16" Click="btnExit_Click" Width="73" Background="#FFE4C5C5"/>
         </StackPanel>
 
     </Grid>
