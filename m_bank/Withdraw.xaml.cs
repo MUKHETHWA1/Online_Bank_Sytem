@@ -36,7 +36,7 @@ namespace m_bank
 
         private void btnWithdrawAmt_Click(object sender, RoutedEventArgs e)
         {
-            // Get the new balance value from your WPF TextBox (txtAmount)
+            // Get the new balance value from your WPF TextBox (txtWithdraw)
             int newBalance = int.Parse(txtWithdraw.Text); // Assuming txtAmount.Text contains a valid decimal value
 
             // Construct the SQL query with parameters
