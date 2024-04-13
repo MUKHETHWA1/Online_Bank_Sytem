@@ -1,0 +1,27 @@
+﻿<Window x:Class="m_bank.Withdraw"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:m_bank"
+        mc:Ignorable="d"
+        Title="Withdraw" Height="450" Width="450">
+    <Grid>
+        <StackPanel Margin="103,0,103,370">
+            <Label Content="Withdraw Here" FontStyle="Italic" FontSize="16" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Margin="10,123,252,253">
+            <Label Content="Amount to Withdraw" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="16" Width="190"/>
+        </StackPanel>
+        <StackPanel Margin="266,123,24,253">
+            <TextBox x:Name="txtWithdraw" TextWrapping="Wrap" Width="120" FontSize="16" Height="35"/>
+        </StackPanel>
+        <StackPanel Margin="131,252,131,124">
+            <Button x:Name="btnWithdrawAmt" Content="Withdraw" FontSize="16" FontWeight="Bold" Width="137" Click="btnWithdrawAmt_Click"/>
+        </StackPanel>
+        <StackPanel Margin="131,338,131,38">
+            <Button x:Name="btnExit" Content="Exit" FontSize="16" FontWeight="Bold" Width="137" Click="btnExit_Click" />
+        </StackPanel>
+
+    </Grid>
+</Window>

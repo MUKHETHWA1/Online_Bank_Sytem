@@ -75,5 +75,11 @@ namespace m_bank
              Deposit mydepo = new Deposit();
            mydepo.Show();
         }
+
+        private void btnWithdraw_Click(object sender, RoutedEventArgs e)
+        {
+            Withdraw amount = new Withdraw();
+            amount.Show();
+        }
     }
 }

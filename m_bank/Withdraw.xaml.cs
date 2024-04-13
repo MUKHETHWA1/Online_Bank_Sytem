@@ -1,8 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
-using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,48 +16,46 @@ using System.Windows.Shapes;
 namespace m_bank
 {
     /// <summary>
-    /// Interaction logic for Deposit.xaml
+    /// Interaction logic for Withdraw.xaml
     /// </summary>
-    public partial class Deposit : Window
+    public partial class Withdraw : Window
     {
         SqlConnection con;
-        public Deposit()
+        public Withdraw()
         {
-            InitializeComponent(); string connectionString = "  Data Source = labG9AEB3\\SQLEXPRESS; Initial Catalog = Bank; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+            InitializeComponent();
+            string connectionString = "  Data Source = labG9AEB3\\SQLEXPRESS; Initial Catalog = Bank; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
             con = new SqlConnection(connectionString);
             con.Open();
-
         }
 
-        private void btnExitDep_Click(object sender, RoutedEventArgs e)
+        private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        private void btnDepositAmt_Click(object sender, RoutedEventArgs e)
+        private void btnWithdrawAmt_Click(object sender, RoutedEventArgs e)
         {
-            // Assuming you have already established a valid SqlConnection 'con'
-
             // Get the new balance value from your WPF TextBox (txtAmount)
-            int newBalance = int.Parse(txtAmount.Text); // Assuming txtAmount.Text contains a valid decimal value
+            int newBalance = int.Parse(txtWithdraw.Text); // Assuming txtAmount.Text contains a valid decimal value
 
             // Construct the SQL query with parameters
-           // string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance WHERE AccountId = @AccountId";
-            string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance ";
+            // string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance WHERE AccountId = @AccountId";
+            string query = "UPDATE ACCOUNT SET Balance = Balance - @NewBalance ";
 
             using (SqlCommand cmd = new SqlCommand(query, con))
             {
                 // Add parameters
                 cmd.Parameters.AddWithValue("@NewBalance", newBalance);
-               // cmd.Parameters.AddWithValue("@AccountId", accountId); // Replace 'accountId' with the actual account ID you want to update
+                // cmd.Parameters.AddWithValue("@AccountId", accountId); // Replace 'accountId' with the actual account ID you want to update
 
                 try
                 {
-                   
+
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Amount deposited successfully!");
+                        MessageBox.Show("Amount Withdraw successfully!");
                     }
                     else
                     {
@@ -70,10 +66,11 @@ namespace m_bank
                 {
                     MessageBox.Show("Error updating balance: " + ex.Message);
                 }
-                
+
             }
 
 
-        }
+        
+    }
     }
 }
