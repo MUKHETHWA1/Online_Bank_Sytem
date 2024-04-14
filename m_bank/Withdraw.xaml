@@ -10,17 +10,23 @@
         <StackPanel Margin="103,0,103,370">
             <Label Content="Withdraw Here" FontStyle="Italic" FontSize="16" HorizontalContentAlignment="Center"/>
         </StackPanel>
-        <StackPanel Margin="10,123,252,253">
+        <StackPanel Margin="10,188,225,188">
             <Label Content="Amount to Withdraw" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="16" Width="190"/>
         </StackPanel>
-        <StackPanel Margin="266,123,24,253">
-            <TextBox x:Name="txtWithdraw" TextWrapping="Wrap" Width="120" FontSize="16" Height="35"/>
+        <StackPanel Margin="280,188,10,188">
+            <TextBox x:Name="txtWithdraw" TextWrapping="Wrap" Width="120" FontSize="16" Height="42"/>
         </StackPanel>
-        <StackPanel Margin="131,252,131,124">
+        <StackPanel Margin="131,311,131,77">
             <Button x:Name="btnWithdrawAmt" Content="Withdraw" FontSize="16" FontWeight="Bold" Width="137" Click="btnWithdrawAmt_Click"/>
         </StackPanel>
-        <StackPanel Margin="131,338,131,38">
+        <StackPanel Margin="131,382,131,10">
             <Button x:Name="btnExit" Content="Exit" FontSize="16" FontWeight="Bold" Width="137" Click="btnExit_Click" />
+        </StackPanel>
+        <StackPanel Margin="10,97,225,279">
+            <Label Content="Enter Your Account ID" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="16" Width="190"/>
+        </StackPanel>
+        <StackPanel Margin="280,97,10,279">
+            <TextBox x:Name="txtAccID" TextWrapping="Wrap" Width="120" FontSize="14" Height="42"/>
         </StackPanel>
 
     </Grid>

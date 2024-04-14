@@ -81,5 +81,12 @@ namespace m_bank
             Withdraw amount = new Withdraw();
             amount.Show();
         }
+
+       
+        private void btnAccRegister_Click(object sender, RoutedEventArgs e)
+        {
+            AccRegisterBank myacc = new AccRegisterBank();
+            myacc.Show();
+        }
     }
 }

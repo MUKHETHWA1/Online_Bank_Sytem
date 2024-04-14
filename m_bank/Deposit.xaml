@@ -10,17 +10,23 @@
         <StackPanel Margin="0,0,0,388">
             <Label Content="Deposit Amount Here" HorizontalContentAlignment="Center" FontStyle="Italic" FontWeight="Bold" FontSize="16" Height="40" Width="342"/>
         </StackPanel>
-        <StackPanel Margin="0,70,225,315">
-            <Label Content="Enter Amount To Deposit" HorizontalContentAlignment="Center" FontSize="14"/>
+        <StackPanel Margin="13,133,225,252">
+            <Label Content="Enter Amount To Deposit" HorizontalContentAlignment="Center" FontSize="14" Height="41"/>
         </StackPanel>
-        <StackPanel Margin="230,70,10,315">
-            <TextBox x:Name="txtAmount" TextWrapping="Wrap" Width="204" Height="30" FontSize="14"/>
+        <StackPanel Margin="230,133,10,252">
+            <TextBox x:Name="txtAmount" TextWrapping="Wrap" Width="144" Height="30" FontSize="14"/>
         </StackPanel>
-        <StackPanel Margin="112,168,128,217">
+        <StackPanel Margin="112,217,128,168">
             <Button x:Name="btnDepositAmt" Content="Deposit" FontSize="18" FontWeight="Bold" Width="165" Click="btnDepositAmt_Click"/>
         </StackPanel>
-        <StackPanel Margin="119,243,135,139">
+        <StackPanel Margin="119,323,135,59">
             <Button x:Name="btnExitDep" Content="Exit" FontWeight="Bold" FontSize="18" Width="154" Click="btnExitDep_Click"/>
+        </StackPanel>
+        <StackPanel Margin="13,64,225,328">
+            <Label Content="Enter Your Accout ID" HorizontalContentAlignment="Center" FontSize="14" Height="38"/>
+        </StackPanel>
+        <StackPanel Margin="236,64,10,328">
+            <TextBox x:Name="txtAccIDd" TextWrapping="Wrap" Width="120" FontSize="14" Height="30"/>
         </StackPanel>
 
     </Grid>

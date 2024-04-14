@@ -1,0 +1,33 @@
+﻿<Window x:Class="m_bank.AccRegisterBank"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:m_bank"
+        mc:Ignorable="d"
+        Title="AccRegisterBank" Height="520" Width="500">
+    <Grid>
+        <StackPanel Margin="0,0,0,373">
+            <Label Content="Welcome Register Your Account Here" HorizontalContentAlignment="Center" FontStyle="Italic" FontSize="16"/>
+        </StackPanel>
+        <StackPanel Margin="10,107,240,253">
+            <Label Content="Enter Your New Account ID" FontSize="16" Height="43"/>
+        </StackPanel>
+        <StackPanel Margin="10,217,240,143">
+            <Label Content="Enter Account Balance" FontSize="16" Height="48"/>
+        </StackPanel>
+        <StackPanel Margin="328,107,10,253">
+            <TextBox x:Name="txtEnterAcc" TextWrapping="Wrap" Width="138" FontSize="14" Height="51"/>
+        </StackPanel>
+        <StackPanel Margin="328,217,10,143">
+            <TextBox x:Name="txtEnterBalance" TextWrapping="Wrap" Width="136" FontSize="14" Height="53"/>
+        </StackPanel>
+        <StackPanel Margin="125,361,125,89">
+            <Button x:Name="btnAccRegister" Content="Register Account" FontWeight="Bold" FontSize="14" Height="36" Click="btnAccRegister_Click"/>
+        </StackPanel>
+        <StackPanel Margin="125,440,125,10">
+            <Button x:Name="btnExit" Content="Exit" FontWeight="Bold" FontSize="14" Height="36" Click="btnExit_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
