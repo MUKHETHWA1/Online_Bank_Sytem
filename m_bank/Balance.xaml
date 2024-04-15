@@ -14,7 +14,7 @@
             <Label Content="Enter Account ID"/>
         </StackPanel>
         <StackPanel Margin="95,250,95,110">
-            <Button x:Name="btnBalance" Content="Check Balance" FontSize="16" FontWeight="Bold"/>
+            <Button x:Name="btnBalance" Content="Check Balance" FontSize="16" FontWeight="Bold" Click="btnBalance_Click"/>
         </StackPanel>
         <StackPanel Margin="294,118,10,242">
             <TextBox x:Name="txtID" TextWrapping="Wrap" Width="129" Height="34" FontSize="14"/>

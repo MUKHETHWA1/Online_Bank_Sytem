@@ -36,6 +36,29 @@ namespace m_bank
 
         private void btnAccRegister_Click(object sender, RoutedEventArgs e)
         {
+            // Store the hashed password in the database
+            string query = "INSERT INTO ACCOUNT ( AccountID, Balance) VALUES ( @AccountID, @Balance)";
+            using (SqlCommand cmd = new SqlCommand(query, con))
+            {
+                try
+                {
+
+                    cmd.Parameters.AddWithValue("@AccountID", txtEnterAcc.Text); // the username entered by the user in the registration form
+                    cmd.Parameters.AddWithValue("@Balance", txtEnterBalance.Text);
+                    // add other parameters...
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Successfully Created");//To Display Message To user
+
+                    txtEnterAcc.Text = "";
+                    txtEnterBalance.Text = "";
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("error");
+                }
+            }
 
         }
     }

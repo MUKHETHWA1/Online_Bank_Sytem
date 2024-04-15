@@ -56,10 +56,13 @@ namespace m_bank
                     string enteredHashedPassword = HashPassword(enteredPassword);
                     if (enteredHashedPassword == storedHashedPassword)
                     {
-                        MessageBox.Show("Connected", "Correct", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show("Connected");
+                        txtUsername.Text = "";
+                        txtPassword.Text = "";
 
                           AccountMenu myselect = new AccountMenu();
                          myselect.Show();
+
 
                     }
                     else

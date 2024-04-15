@@ -42,16 +42,16 @@ namespace m_bank
 
             // Get the new balance value from your WPF TextBox (txtAmount)
             int newBalance = int.Parse(txtAmount.Text); // Assuming txtAmount.Text contains a valid decimal value
-
+            int accountId = int.Parse(txtAccIDd.Text);
             // Construct the SQL query with parameters
-           // string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance WHERE AccountId = @AccountId";
-            string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance ";
+             string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance WHERE AccountID = @AccountId";
+            //string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance ";
 
             using (SqlCommand cmd = new SqlCommand(query, con))
             {
                 // Add parameters
                 cmd.Parameters.AddWithValue("@NewBalance", newBalance);
-               // cmd.Parameters.AddWithValue("@AccountId", accountId); // Replace 'accountId' with the actual account ID you want to update
+                cmd.Parameters.AddWithValue("@AccountId", accountId); // Replace 'accountId' with the actual account ID you want to update
 
                 try
                 {

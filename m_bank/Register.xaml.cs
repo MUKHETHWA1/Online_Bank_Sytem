@@ -67,7 +67,7 @@ namespace m_bank
                         // add other parameters...
 
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Successfully Registered", "Saved", MessageBoxButton.OK, MessageBoxImage.Information);//To Display Message To user
+                        MessageBox.Show("Successfully Registered");//To Display Message To user
                        
                         txtUsernameReg.Text = "";
                         txtPasswordReg.Text = "";

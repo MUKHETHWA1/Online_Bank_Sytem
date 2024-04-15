@@ -35,7 +35,7 @@ namespace m_bank
 
         private void btnBalance_Click(object sender, RoutedEventArgs e)
         {
-            try
+          /*  try
             {
                 string queryy = "SELECT*FROM ACCOUNT";
 
@@ -59,9 +59,10 @@ namespace m_bank
             {
                 MessageBox.Show("Error while reading from list: " + UnhandledError.Message);
             }
+            */
             
-            
-            
+            Balance balance = new Balance();
+            balance.Show();
 
         }
 
