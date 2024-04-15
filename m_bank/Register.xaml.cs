@@ -69,11 +69,16 @@ namespace m_bank
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Successfully Registered");//To Display Message To user
                        
+                        //To Clear text field
                         txtUsernameReg.Text = "";
                         txtPasswordReg.Text = "";
-                        // handle the success or error case...
+
+                        //Method used to Access another window.
                        AccountMenu BankS = new AccountMenu();
                         BankS.Show();
+
+                        //To Close Window after registering
+                        this.Close();
                     }
                     catch (Exception ex)
                     {
