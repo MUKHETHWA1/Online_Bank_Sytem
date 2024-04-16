@@ -29,10 +29,10 @@
             <TextBox x:Name="txtPassword" TextWrapping="Wrap" Width="126" Height="36" FontSize="16"/>
         </StackPanel>
         <StackPanel Margin="156,217,156,0">
-            <Button x:Name="btnLogin" Content="Login" FontSize="16" HorizontalAlignment="Center" Width="89" FontWeight="Bold" Click="btnLogin_Click"/>
+            <Button x:Name="btnLogin" Content="Login" FontSize="16" HorizontalAlignment="Center" Width="89" FontWeight="Bold" Click="btnLogin_Click" BorderBrush="#FFEA1313"/>
         </StackPanel>
         <StackPanel Margin="156,31,156,82" Grid.Row="1">
-            <Button x:Name="btnRegister" Content="Register" FontSize="16" HorizontalAlignment="Center" Width="89" FontWeight="Bold" Click="btnRegister_Click" />
+            <Button x:Name="btnRegister" Content="Register" FontSize="16" HorizontalAlignment="Center" Width="89" FontWeight="Bold" Click="btnRegister_Click" BorderBrush="#FF192DCC" Background="#FFDE9C9C" />
         </StackPanel>
 
     </Grid>
