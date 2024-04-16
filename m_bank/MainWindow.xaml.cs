@@ -79,6 +79,7 @@ namespace m_bank
             }
 
         }
+        //Method for hashing password
         public static string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())
