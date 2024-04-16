@@ -20,6 +20,7 @@ namespace m_bank
     /// </summary>
     public partial class Withdraw : Window
     {
+        //connection for sql
         SqlConnection con;
         public Withdraw()
         {
@@ -29,11 +30,13 @@ namespace m_bank
             con.Open();
         }
 
+        //Exit button method
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
+        //
         private void btnWithdrawAmt_Click(object sender, RoutedEventArgs e)
         {
             // Get the new balance value from your WPF TextBox (txtWithdraw)
