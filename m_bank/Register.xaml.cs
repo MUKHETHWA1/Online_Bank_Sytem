@@ -76,7 +76,7 @@ namespace m_bank
                         //Method used to Access another window.
                        AccountMenu BankS = new AccountMenu();
                         BankS.Show();
-
+                        
                         //To Close Window after registering
                         this.Close();
                     }
