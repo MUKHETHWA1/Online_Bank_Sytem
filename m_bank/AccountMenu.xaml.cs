@@ -66,6 +66,7 @@ namespace m_bank
 
         }
 
+        //Exit Method
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
