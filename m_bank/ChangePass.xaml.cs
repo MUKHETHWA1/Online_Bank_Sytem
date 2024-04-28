@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace m_bank
 {
     /// <summary>
-    /// Interaction logic for ForgotPassword.xaml
+    /// Interaction logic for ChangePass.xaml
     /// </summary>
-    public partial class ForgotPassword : Window
+    public partial class ChangePass : Window
     {
-        public ForgotPassword()
+        public ChangePass()
         {
             InitializeComponent();
-        }
-
-        private void btnNext_Click(object sender, RoutedEventArgs e)
-        {
-            ChangePass changePass = new ChangePass();
-            changePass.Show();
         }
     }
 }

@@ -97,7 +97,8 @@ namespace m_bank
 
         private void btnForgotPass_Click(object sender, RoutedEventArgs e)
         {
-
+            ForgotPassword select = new ForgotPassword();
+            select.Show();
         }
     }
 }
