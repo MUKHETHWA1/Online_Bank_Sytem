@@ -43,11 +43,9 @@ namespace m_bank
 
 
                 // Retrieve the stored hashed password from the database
-                string query = "SELECT Username FROM REGISTER WHERE Username = @Username";
+                string query = $"SELECT Username FROM REGISTER WHERE Username = @Username";
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                    cmd.Parameters.AddWithValue("@Username", txtEnterUsername.Text); // the username entered by the user in the login form
-
                    
                     if (check == query)
                     {
