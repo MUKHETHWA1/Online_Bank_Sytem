@@ -29,5 +29,10 @@ namespace m_bank
             ChangePass changePass = new ChangePass();
             changePass.Show();
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
