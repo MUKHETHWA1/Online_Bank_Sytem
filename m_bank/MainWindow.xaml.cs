@@ -94,5 +94,10 @@ namespace m_bank
              Register myselect = new Register();
              myselect.Show();
         }
+
+        private void btnForgotPass_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
