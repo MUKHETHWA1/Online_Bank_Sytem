@@ -56,7 +56,7 @@ namespace m_bank
                     else
                     {
                         // Handle case when no record is found for the entered ID
-                        MessageBox.Show("No record found, Go to Option 4 To Register Account.");
+                        MessageBox.Show("No balance/record found, Go to Option 4 To Register Account.");
                     }
                 }
             }
