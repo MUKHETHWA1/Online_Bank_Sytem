@@ -43,7 +43,7 @@ namespace m_bank
 
 
                 // Retrieve the stored hashed password from the database
-                string query = $"SELECT Username FROM REGISTER WHERE Username = @Username";
+                string query = $"SELECT Username FROM REGISTER WHERE Username = {check}";
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
                    
