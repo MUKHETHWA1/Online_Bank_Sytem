@@ -37,6 +37,9 @@
         <StackPanel Margin="270,207,26,10">
             <Button x:Name="btnForgotPass" Content="Forgot Password?" FontSize="16" HorizontalAlignment="Center" Width="146" FontWeight="Bold" BorderBrush="#FFEA1313" Click="btnForgotPass_Click"/>
         </StackPanel>
+        <StackPanel Margin="299,83,26,34" Grid.Row="1">
+            <Button Content="View Latest News"/>
+        </StackPanel>
 
     </Grid>
 </Window>
