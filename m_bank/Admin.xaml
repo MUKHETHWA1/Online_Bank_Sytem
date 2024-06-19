@@ -23,7 +23,7 @@
             <TextBox x:Name="txtAdminPassword" TextWrapping="Wrap" Width="156" FontSize="22" Height="51"/>
         </StackPanel>
         <StackPanel Margin="96,334,62,10">
-            <Button x:Name="btnAdminSignin" Content="Sign In" HorizontalAlignment="Center" FontWeight="Bold" FontSize="36" Height="58" Width="178" Background="#FFECD8D8" BorderBrush="#FFF51818"/>
+            <Button x:Name="btnAdminSignin" Content="Sign In" HorizontalAlignment="Center" FontWeight="Bold" FontSize="36" Height="58" Width="178" Background="#FFECD8D8" BorderBrush="#FFF51818" Click="btnAdminSignin_Click"/>
         </StackPanel>
 
     </Grid>

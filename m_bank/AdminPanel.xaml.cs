@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace m_bank
 {
     /// <summary>
-    /// Interaction logic for Admin.xaml
+    /// Interaction logic for AdminPanel.xaml
     /// </summary>
-    public partial class Admin : Window
+    public partial class AdminPanel : Window
     {
-        public Admin()
+        public AdminPanel()
         {
             InitializeComponent();
-        }
-
-        private void btnAdminSignin_Click(object sender, RoutedEventArgs e)
-        {
-            AdminPanel panel = new AdminPanel();
-            panel.Show();
-            this.Close();
         }
     }
 }
