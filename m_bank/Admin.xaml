@@ -10,6 +10,21 @@
         <StackPanel Margin="62,0,62,348">
             <Label Content="Admin Login" FontWeight="Bold" FontStyle="Italic" FontSize="36" HorizontalContentAlignment="Center"/>
         </StackPanel>
+        <StackPanel Margin="27,109,250,242">
+            <Label Content="Username" HorizontalContentAlignment="Center" FontSize="22" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel Margin="27,217,250,134">
+            <Label Content="Password" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="22"/>
+        </StackPanel>
+        <StackPanel Margin="267,109,10,242">
+            <TextBox x:Name="txtAdminUsername" TextWrapping="Wrap"  Width="156" FontSize="22" Height="51"/>
+        </StackPanel>
+        <StackPanel Margin="267,217,10,134">
+            <TextBox x:Name="txtAdminPassword" TextWrapping="Wrap" Width="156" FontSize="22" Height="51"/>
+        </StackPanel>
+        <StackPanel Margin="96,334,62,10">
+            <Button x:Name="btnAdminSignin" Content="Sign In" HorizontalAlignment="Center" FontWeight="Bold" FontSize="36" Height="58" Width="178" Background="#FFECD8D8" BorderBrush="#FFF51818"/>
+        </StackPanel>
 
     </Grid>
 </Window>
