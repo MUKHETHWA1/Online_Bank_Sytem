@@ -23,5 +23,10 @@ namespace m_bank
         {
             InitializeComponent();
         }
+
+        private void btnAdminPanelSignOut_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
