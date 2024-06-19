@@ -41,7 +41,7 @@
             <Button x:Name="btnNews" Content="View Latest News" HorizontalAlignment="Center" FontWeight="Bold" Height="27"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Margin="0,83,294,34">
-            <Button x:Name="btnAdmin" Content="Admin" HorizontalAlignment="Center" Height="26" Width="68" FontWeight="Bold" FontSize="16"/>
+            <Button x:Name="btnAdmin" Content="Admin" HorizontalAlignment="Center" Height="26" Width="68" FontWeight="Bold" FontSize="16" Click="btnAdmin_Click"/>
         </StackPanel>
 
     </Grid>

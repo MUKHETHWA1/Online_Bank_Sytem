@@ -100,5 +100,14 @@ namespace m_bank
             ForgotPassword select = new ForgotPassword();
             select.Show();
         }
+
+        private void btnAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            //to show admin page
+            Admin admin = new Admin();
+            admin.Show();
+            //to click this page 
+            this.Close();
+        }
     }
 }
