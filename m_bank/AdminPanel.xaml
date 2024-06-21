@@ -7,12 +7,25 @@
         mc:Ignorable="d"
         Title="AdminPanel" Height="450" Width="500">
     <Grid>
-        <StackPanel Margin="68,0,68,366">
+        <StackPanel Margin="68,0,68,375">
             <Label Content="Welcome to Admin Panel" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="28"/>
         </StackPanel>
         <StackPanel Margin="36,316,304,65">
             <Button x:Name="btnAdminPanelSignOut" Content="Sign Out" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Height="34" Width="119" Click="btnAdminPanelSignOut_Click"/>
         </StackPanel>
+        <StackPanel Margin="68,114,68,145">
+            <ListView x:Name="lstDisplay" Height="142" d:ItemsSource="{d:SampleData ItemCount=5}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+        <StackPanel Margin="10,50,250,325">
+            <Button x:Name="btnDisplay" Content="Click To View Registerd Accounts" HorizontalAlignment="Center" Height="30" Width="232" FontSize="14"/>
+        </StackPanel>
+
 
     </Grid>
 </Window>
