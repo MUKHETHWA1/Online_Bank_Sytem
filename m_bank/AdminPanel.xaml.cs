@@ -34,5 +34,31 @@ namespace m_bank
         {
             this.Close();
         }
+
+        private void btnDisplay_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string queryy = "SELECT*FROM ACCOUNT;";
+
+                SqlCommand scom = new SqlCommand(queryy, con);//LINKING THE DATABASE CONNECTION WITH THE SQL QUERY
+                SqlDataReader reader = scom.ExecuteReader();//ALLOWS US TO READ DATA FROM THE DATABASE THROUGH THE SQL COMMAND
+                while (reader.Read())
+                {
+                    string display = "Account ID:" + reader.GetValue(0) + "\n" +
+                        "Account Balance: " + reader.GetValue(1) 
+                        
+                        ;
+                    
+                   lstDisplay.Items.Add(display);
+
+
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("enter values");
+            }
+        }
     }
 }

@@ -13,17 +13,11 @@
         <StackPanel Margin="36,316,304,65">
             <Button x:Name="btnAdminPanelSignOut" Content="Sign Out" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Height="34" Width="119" Click="btnAdminPanelSignOut_Click"/>
         </StackPanel>
-        <StackPanel Margin="68,114,68,145">
-            <ListView x:Name="lstDisplay" Height="142" d:ItemsSource="{d:SampleData ItemCount=5}">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
+        <StackPanel Margin="68,114,68,137">
+            <ListBox x:Name="lstDisplay" Margin="10,0,10,10" Height="164"  Foreground="#FF263D9E" FontFamily="Arial Black" Width="316"/>
         </StackPanel>
         <StackPanel Margin="10,50,250,325">
-            <Button x:Name="btnDisplay" Content="Click To View Registerd Accounts" HorizontalAlignment="Center" Height="30" Width="232" FontSize="14"/>
+            <Button x:Name="btnDisplay" Content="Click To View Registerd Accounts" HorizontalAlignment="Center" Height="30" Width="232" FontSize="14" Click="btnDisplay_Click"/>
         </StackPanel>
 
 
