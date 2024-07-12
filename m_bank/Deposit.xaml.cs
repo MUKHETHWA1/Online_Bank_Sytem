@@ -39,40 +39,45 @@ namespace m_bank
         private void btnDepositAmt_Click(object sender, RoutedEventArgs e)
         {
             // Assuming you have already established a valid SqlConnection 'con'
-
-            // Get the new balance value from your WPF TextBox (txtAmount)
-            int newBalance = int.Parse(txtAmount.Text); // Assuming txtAmount.Text contains a valid decimal value
-            int accountId = int.Parse(txtAccIDd.Text);
-            // Construct the SQL query with parameters
-             string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance WHERE AccountID = @AccountId";
-            //string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance ";
-
-            using (SqlCommand cmd = new SqlCommand(query, con))
+            try
             {
-                // Add parameters
-                cmd.Parameters.AddWithValue("@NewBalance", newBalance);
-                cmd.Parameters.AddWithValue("@AccountId", accountId); // Replace 'accountId' with the actual account ID you want to update
+                // Get the new balance value from your WPF TextBox (txtAmount)
+                int newBalance = int.Parse(txtAmount.Text); // Assuming txtAmount.Text contains a valid decimal value
+                int accountId = int.Parse(txtAccIDd.Text);
+                // Construct the SQL query with parameters
+                string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance WHERE AccountID = @AccountId";
+                //string query = "UPDATE ACCOUNT SET Balance = Balance + @NewBalance ";
 
-                try
+                using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                   
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    if (rowsAffected > 0)
+                    // Add parameters
+                    cmd.Parameters.AddWithValue("@NewBalance", newBalance);
+                    cmd.Parameters.AddWithValue("@AccountId", accountId); // Replace 'accountId' with the actual account ID you want to update
+
+                    try
                     {
-                        MessageBox.Show("Amount deposited successfully!");
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Amount deposited successfully!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No records were updated.");
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("No records were updated.");
+                        MessageBox.Show("Error updating balance: " + ex.Message);
                     }
+
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error updating balance: " + ex.Message);
-                }
-                
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }
