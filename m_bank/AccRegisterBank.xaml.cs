@@ -23,6 +23,7 @@ namespace m_bank
         SqlConnection con;
         public AccRegisterBank()
         {
+            //Connection to the swl database
             InitializeComponent();
             string connectionString = "  Data Source = labG9AEB3\\SQLEXPRESS; Initial Catalog = Bank; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
             con = new SqlConnection(connectionString);
@@ -31,6 +32,7 @@ namespace m_bank
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
+            //Exit method
             this.Close();
         }
 
