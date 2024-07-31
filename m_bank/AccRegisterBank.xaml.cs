@@ -23,7 +23,7 @@ namespace m_bank
         SqlConnection con;
         public AccRegisterBank()
         {
-            //Connection to the swl database
+            //Connection to the sql database
             InitializeComponent();
             string connectionString = "  Data Source = labG9AEB3\\SQLEXPRESS; Initial Catalog = Bank; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
             con = new SqlConnection(connectionString);
@@ -51,7 +51,7 @@ namespace m_bank
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Successfully Created");//To Display Message To user
-
+                    //to clear texfields
                     txtEnterAcc.Text = "";
                     txtEnterBalance.Text = "";
                     
