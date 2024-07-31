@@ -109,5 +109,12 @@ namespace m_bank
             //to click this page 
             this.Close();
         }
+
+        private void btnNews_Click(object sender, RoutedEventArgs e)
+        {
+            LatestNews news = new LatestNews();
+            news.Show();
+            this.Close();
+        }
     }
 }
