@@ -1,6 +1,6 @@
 Online Bank System
 
-[I created an online banking system with features such as Check Balance, Deposit Money, Withdraw Money,Account Register and Exit. First, the user is required to log in to the system using their username and password. Unregistered users can click the register button to be taken to the registration page, where they can sign up to access the system. User credentials are securely stored in a database.
+I created an online banking system with features such as Check Balance, Deposit Money, Withdraw Money,Account Register and Exit. First, the user is required to log in to the system using their username and password. Unregistered users can click the register button to be taken to the registration page, where they can sign up to access the system. User credentials are securely stored in a database.
 
 Once the user has logged in or registered, the system will prompt them with a new page containing four options: 1. Balance, 2. Deposit, 3. Withdraw, 4. Acoount Register and 5. Exit.
 
@@ -15,3 +15,5 @@ Account ID register: A user is required to create an account ID and provide a st
 This user-friendly online banking system ensures that users can easily manage their accounts by checking their balance, depositing money, and withdrawing money with just a few clicks.]
 
 Admin Feature: Admin can login using their username and password. Admin will be able to see every Account that is registered in our system.
+
+News Feature: User will be able to view latest news about trends.
