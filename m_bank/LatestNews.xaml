@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:m_bank"
         mc:Ignorable="d"
-        Title="LatestNews" Height="450" Width="800">
+        Title="LatestNews" Height="500" Width="500">
     <Grid>
-        
+        <Image HorizontalAlignment="Center" Height="100" Margin="0,92,0,0" VerticalAlignment="Top" Width="100" Source="/smiley.png"/>
+        <Label Content="Our Latest News" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="18"/>
+
     </Grid>
 </Window>
