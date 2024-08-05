@@ -28,6 +28,7 @@
         <StackPanel Margin="102,312,102,79">
             <Button x:Name="btnTransfer" Content="Transfer" Height="32" Width="163" FontSize="18" FontWeight="Bold" Click="btnTransfer_Click"/>
         </StackPanel>
+        <TextBox x:Name="txtAccountNumber" HorizontalAlignment="Left" Margin="23,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

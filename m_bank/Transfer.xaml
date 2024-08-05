@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:m_bank"
         mc:Ignorable="d"
-        Title="Transfer" Height="450" Width="800">
+        Title="Transfer" Height="450" Width="500">
     <Grid>
-        
+        <StackPanel Margin="136,10,136,367">
+            <Label Content="Transfer Money" HorizontalContentAlignment="Center" FontStyle="Italic" FontSize="14"/>
+        </StackPanel>
+        <StackPanel Margin="39,101,250,281">
+            <Label Content="Enter Recipient Account Number" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel Margin="39,179,250,199">
+            <Label Content="Enter Amount To Transfer" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Margin="296,101,10,281">
+            <TextBox x:Name="txtAccountNumberTransfer" TextWrapping="Wrap" Width="151" Height="34" FontSize="14"/>
+        </StackPanel>
+        <StackPanel Margin="296,179,10,199">
+            <TextBox x:Name="txtAmountToTransfer" TextWrapping="Wrap" Width="149" FontSize="14" Height="33"/>
+        </StackPanel>
+        <StackPanel Margin="165,292,165,89">
+            <Button x:Name="btnMoneyTransfer" Content="Transfer" Width="136" Height="39" FontSize="20"/>
+        </StackPanel>
+        <StackPanel Margin="165,371,165,10">
+            <Button x:Name="btnMoneyTransferBack" Content="Back" Width="136" Height="39" FontSize="20" Click="btnMoneyTransferBack_Click"/>
+        </StackPanel>
+
     </Grid>
 </Window>

@@ -96,5 +96,27 @@ namespace m_bank
             Transfer transfer = new Transfer();
             transfer.Show();
         }
+
+
+        //method to generate account number
+        private void GenerateAccountNumber()
+        {
+            // Create an instance of the AccountNumber class
+            var accountNumber = new Generator();
+
+            // Generate the account number (you can replace this with your logic)
+            accountNumber.Number = GenerateRandomAccountNumber();
+
+            // Display the account number in the TextBox
+            txtAccountNumber.Text = accountNumber.Number;
+        }
+
+        private string GenerateRandomAccountNumber()
+        {
+            // Replace this with your actual account number generation logic
+            // For example, generate a random string or retrieve it from a database
+            return "123456789"; // Example account number
+        }
+
     }
 }
