@@ -90,5 +90,11 @@ namespace m_bank
             AccRegisterBank myacc = new AccRegisterBank();
             myacc.Show();
         }
+
+        private void btnTransfer_Click(object sender, RoutedEventArgs e)
+        {
+            Transfer transfer = new Transfer();
+            transfer.Show();
+        }
     }
 }

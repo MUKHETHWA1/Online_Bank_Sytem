@@ -26,7 +26,7 @@
             <Button x:Name="btnAccRegister" Content="4. Bank Register" FontSize="14" Height="24" Width="172" Click="btnAccRegister_Click" />
         </StackPanel>
         <StackPanel Margin="102,312,102,79">
-            <Button Content="Transfer" Height="32" Width="163" FontSize="18" FontWeight="Bold"/>
+            <Button x:Name="btnTransfer" Content="Transfer" Height="32" Width="163" FontSize="18" FontWeight="Bold" Click="btnTransfer_Click"/>
         </StackPanel>
 
     </Grid>
