@@ -19,11 +19,14 @@
         <StackPanel Margin="102,198,102,193">
             <Button x:Name="btnWithdraw" Content="3. Withdraw" HorizontalAlignment="Center" FontSize="16" Background="#FF9CCCCB" Click="btnWithdraw_Click"/>
         </StackPanel>
-        <StackPanel Margin="102,339,102,52">
+        <StackPanel Margin="102,381,102,10">
             <Button x:Name="btnExit" Content="5. Exit" HorizontalAlignment="Center" FontSize="16" Click="btnExit_Click" Width="73" Background="#FFE4C5C5"/>
         </StackPanel>
         <StackPanel Margin="102,262,102,122">
             <Button x:Name="btnAccRegister" Content="4. Bank Register" FontSize="14" Height="24" Width="172" Click="btnAccRegister_Click" />
+        </StackPanel>
+        <StackPanel Margin="102,312,102,79">
+            <Button Content="Transfer" Height="32" Width="163" FontSize="18" FontWeight="Bold"/>
         </StackPanel>
 
     </Grid>
