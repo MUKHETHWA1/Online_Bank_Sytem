@@ -30,7 +30,7 @@ namespace m_bank
             con = new SqlConnection(connectionString);
             con.Open();
 
-            GenerateAccountNumber();
+           // GenerateAccountNumber();
         }
           
        
