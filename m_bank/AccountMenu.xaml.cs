@@ -29,8 +29,10 @@ namespace m_bank
             string connectionString = "  Data Source = labG9AEB3\\SQLEXPRESS; Initial Catalog = Bank; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
             con = new SqlConnection(connectionString);
             con.Open();
-        }
 
+            GenerateAccountNumber();
+        }
+          
        
 
         private void btnBalance_Click(object sender, RoutedEventArgs e)

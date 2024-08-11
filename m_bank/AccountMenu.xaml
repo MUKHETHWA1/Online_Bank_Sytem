@@ -25,10 +25,10 @@
         <StackPanel Margin="102,262,102,122">
             <Button x:Name="btnAccRegister" Content="4. Bank Register" FontSize="14" Height="24" Width="172" Click="btnAccRegister_Click" />
         </StackPanel>
-        <StackPanel Margin="102,312,102,79">
+        <StackPanel Margin="102,312,102,71">
             <Button x:Name="btnTransfer" Content="Transfer" Height="32" Width="163" FontSize="18" FontWeight="Bold" Click="btnTransfer_Click"/>
         </StackPanel>
-        <TextBox x:Name="txtAccountNumber" HorizontalAlignment="Left" Margin="23,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAccountNumber" HorizontalAlignment="Left" Margin="179,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
