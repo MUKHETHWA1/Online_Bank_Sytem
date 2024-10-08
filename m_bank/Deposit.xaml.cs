@@ -25,7 +25,8 @@ namespace m_bank
         SqlConnection con;
         public Deposit()
         {
-            InitializeComponent(); string connectionString = "  Data Source = labG9AEB3\\SQLEXPRESS; Initial Catalog = Bank; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+            InitializeComponent();
+             string connectionString = " Your Connection String";
             con = new SqlConnection(connectionString);
             con.Open();
 
