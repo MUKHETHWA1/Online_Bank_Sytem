@@ -25,8 +25,8 @@ namespace m_bank
         {
             //Connection to the sql database
             InitializeComponent();
-            string connectionString = "  Data Source = labG9AEB3\\SQLEXPRESS; Initial Catalog = Bank; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
-            con = new SqlConnection(connectionString);
+ string connectionString = " Your Connection String";           
+ con = new SqlConnection(connectionString);
             con.Open();
         }
 
