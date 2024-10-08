@@ -17,3 +17,7 @@ This user-friendly online banking system ensures that users can easily manage th
 Admin Feature: Admin can login using their username and password. Admin will be able to see every Account that is registered in our system.
 
 News Feature: User will be able to view latest news about trends.
+
+everything is stored in the database. MS SQL SERVER
+
+
